@@ -193,7 +193,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
         <div class="form-group">
           <label for="email">Administrator Email Address *</label>
-          <input type="email" id="email" name="email" class="form-control" value="<?= e($currentRecord['email'] ?? 'admin@iboltnetworks.com') ?>" required placeholder="admin@iboltnetworks.com">
+          <input type="email" id="email" name="email" class="form-control" value="<?= e($currentRecord['email'] ?? 'sales@iboltnetworks.com') ?>" required placeholder="sales@iboltnetworks.com">
           <small style="color: #64748b; font-size: 11.5px; display: block; margin-top: 4px;">Receives system notifications and can also be used to sign in.</small>
         </div>
 

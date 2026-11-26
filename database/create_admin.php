@@ -6,7 +6,7 @@ declare(strict_types=1);
  * 
  * Usage:
  *   php database/create_admin.php
- *   php database/create_admin.php "admin@iboltnetworks.com" "admin" "MySecurePass123!" "System Administrator"
+ *   php database/create_admin.php "sales@iboltnetworks.com" "admin" "MySecurePass123!" "System Administrator"
  */
 
 require_once __DIR__ . '/../app/config/config.php';
@@ -32,9 +32,9 @@ $password = $argv[3] ?? null;
 $name = $argv[4] ?? null;
 
 if (empty($email)) {
-    echo "Enter Administrator Email [admin@iboltnetworks.com]: ";
+    echo "Enter Administrator Email [sales@iboltnetworks.com]: ";
     $input = trim((string)fgets(STDIN));
-    $email = !empty($input) ? $input : 'admin@iboltnetworks.com';
+    $email = !empty($input) ? $input : 'sales@iboltnetworks.com';
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

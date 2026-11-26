@@ -227,7 +227,7 @@ STORE_ADDRESS="Vishal Bhawan, Nehru Place, New Delhi, Delhi 110019"
 ### Step 5: Initialize Administrator Account
 Because default compromised credentials have been removed, initialize your unique administrator account using:
 - **Web Setup Wizard:** Navigate to `https://iboltnetworks.com/admin/setup-admin.php`
-- **Or CLI Command:** `php database/create_admin.php "admin@iboltnetworks.com" "admin" "YourStrongPassword!" "System Administrator"`
+- **Or CLI Command:** `php database/create_admin.php "sales@iboltnetworks.com" "admin" "YourStrongPassword!" "System Administrator"`
 
 ---
 

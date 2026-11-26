@@ -158,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$setupLocked) {
 
         <div class="form-group">
           <label for="email">Administrator Email</label>
-          <input type="email" id="email" name="email" value="admin@iboltnetworks.com" required autocomplete="email">
+          <input type="email" id="email" name="email" value="sales@iboltnetworks.com" required autocomplete="email">
         </div>
 
         <div class="form-group">

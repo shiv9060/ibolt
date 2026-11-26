@@ -294,7 +294,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-group">
           <label for="email">Admin Email Address</label>
-          <input type="email" id="email" name="email" value="<?= e($_POST["email"] ?? "admin@iboltnetworks.com") ?>" required autofocus placeholder="admin@iboltnetworks.com">
+          <input type="email" id="email" name="email" value="<?= e($_POST["email"] ?? "sales@iboltnetworks.com") ?>" required autofocus placeholder="sales@iboltnetworks.com">
         </div>
 
         <button type="submit" class="btn-submit">Generate Recovery Link</button>
