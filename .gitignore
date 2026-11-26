@@ -1,0 +1,41 @@
+# ==============================================================================
+# Sensitive Environment Configuration & Credentials (NEVER COMMIT)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+
+# Local development temporary helpers
+admin/quick-admin.php
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archives and Large Deployment Packages
+*.zip
+*.tar
+*.gz
+*.tgz
+*.rar
+
+# Logs and Storage
+*.log
+app/storage/*.log
+app/storage/*.tmp
+
+# Uploads directory
+uploads/products/*.png
+uploads/products/*.jpg
+uploads/products/*.jpeg
+uploads/products/*.webp
+uploads/products/thumbs/*.png
+uploads/products/thumbs/*.jpg
+uploads/products/thumbs/*.jpeg
+uploads/products/thumbs/*.webp
+!uploads/products/.gitkeep

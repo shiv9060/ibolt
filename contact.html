@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sales & Request a Quote | iboltnetworks</title>
+  <meta name="description" content="Contact iboltnetworks sales team for enterprise server quotes, custom builds, hardware rentals, and technical support.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .contact-wrapper {
+      background: #f6f8fa;
+      padding: 40px 0 70px;
+      min-height: 600px;
+    }
+    .contact-container {
+      width: min(var(--content-width), calc(100% - 48px));
+      margin: 0 auto;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #e1e7ec;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .contact-sidebar {
+      background: linear-gradient(145deg, #078e49 0%, #056633 100%);
+      color: #ffffff;
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-sidebar h2 {
+      margin: 0 0 14px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    .contact-sidebar p {
+      font-size: 15px;
+      opacity: 0.92;
+      line-height: 1.6;
+      margin: 0 0 30px;
+    }
+    .contact-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-info-list li strong {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .contact-info-list li a,
+    .contact-info-list li span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .contact-form-wrap {
+      padding: 48px 40px;
+    }
+    .contact-form-wrap h3 {
+      font-size: 24px;
+      color: #111;
+      margin: 0 0 8px;
+    }
+    .contact-form-wrap p {
+      font-size: 14px;
+      color: #64748b;
+      margin: 0 0 28px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 14.5px;
+      color: #1e293b;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #078e49;
+      box-shadow: 0 0 0 3px rgba(7, 142, 73, 0.15);
+    }
+    .btn-submit {
+      background: #078e49;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover {
+      background: #06773d;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-sidebar, .contact-form-wrap {
+        padding: 30px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement">
+    <p>For Quick Assistance on a Product, Message Us in the Live Chat (24x7).</p>
+    <a class="announcement-close" href="#" aria-label="Close announcement">×</a>
+  </div>
+
+  <!-- Main header -->
+  <header class="main-header">
+    <div class="header-inner">
+      <a class="brand" href="index.php" aria-label="iboltnetworks home">
+        <span class="brand-mark">iB</span>
+        <span class="brand-copy">
+          <strong>ibolt<span>networks</span></strong>
+          <small>Powering your technology</small>
+        </span>
+      </a>
+
+      <form class="search-form" action="products.php" method="get">
+        <label class="visually-hidden" for="search-category">Product category</label>
+        <select id="search-category" name="category">
+          <option value="all">All</option>
+          <option value="servers">Servers</option>
+          <option value="components">Components</option>
+          <option value="memory">Memory</option>
+          <option value="storage">Storage</option>
+        </select>
+        <label class="visually-hidden" for="site-search">Search products</label>
+        <input id="site-search" type="search" name="q" placeholder="I'm shopping for...">
+        <button type="submit">Search</button>
+      </form>
+
+      <a class="header-contact" href="tel:+919911003865" style="text-decoration:none; color:inherit;" title="Call iboltnetworks at +91 99110 03865">
+        <span class="phone-icon" aria-hidden="true">♧</span>
+        <span><small>Hotline / WhatsApp</small><strong>+91 99110 03865</strong></span>
+      </a>
+
+      <a class="header-icon cart-link" href="cart.php" aria-label="Shopping cart">
+        <span aria-hidden="true">♧</span><b>0</b>
+      </a>
+
+      <a class="account-link" href="login.php">
+        <span class="user-icon" aria-hidden="true">♙</span>
+        <strong>Log in<br>Register</strong>
+      </a>
+    </div>
+  </header>
+
+  <!-- Primary navigation -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-feature" href="products.php?category=custom-server"><span aria-hidden="true">▤</span> BUILD YOUR OWN SERVER</a>
+
+      <!-- SERVERS with 5-Column Mega Menu -->
+      <div class="nav-item has-mega-menu">
+        <a href="products.php?category=servers" id="servers-menu-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="servers-mega-menu">
+          SERVERS <span class="nav-arrow" aria-hidden="true">▼</span>
+        </a>
+
+        <div class="mega-menu" id="servers-mega-menu" role="region" aria-label="Servers Mega Menu">
+          <div class="mega-menu-grid">
+            
+            <!-- Column 1: Dell Refurbished Servers & Huawei -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?brand=dell&condition=refurbished">Dell Refurbished Servers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=dell&model=dell-r840-rack-server">Dell R840 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r740xd-rack-server">Dell R740xd Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r740-rack-server">Dell R740 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r640-rack-server">Dell R640 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r430-rack-server">Dell R430 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r530-rack-server">Dell R530 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r630-rack-server">Dell R630 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r730xd-rack-server">Dell R730xd Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r730-rack-server">Dell R730 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r820-rack-server">Dell R820 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r720xd-rack-server">Dell R720xd Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r720-rack-server">Dell R720 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r620-rack-server">Dell R620 Rack Server</a></li>
+              </ul>
+              <h4 class="mega-subheading"><a href="products.php?brand=huawei&condition=refurbished">Huawei Refurbished Servers</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=huawei&model=huawei-fusionserver-rh2288-v3">Huawei FusionServer RH2288 V3</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: HPE Refurbished Servers & Cisco Servers -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?brand=hpe&condition=refurbished">HPE Refurbished Servers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=hpe&model=hpe-apollo-r2600-g10-server">HPE Apollo R2600 G10 Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360-g10-rack-server">HPE DL360 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380-g10-rack-server">HPE DL380 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl560-g9-rack-server">HPE DL560 G9 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380-g9-rack-server">HPE DL380 G9 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360-g9-rack-server">HPE DL360 G9 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl180-g9-rack-server">HPE DL180 G9 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380p-g8-rack-server">HPE DL380P G8 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360p-g8-rack-server">HPE DL360P G8 Rack Server</a></li>
+              </ul>
+              <h4 class="mega-subheading"><a href="products.php?brand=cisco">Cisco Servers</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=cisco&model=cisco-c240-m6-rack-server">Cisco C240 M6 Rack Server</a></li>
+                <li><a href="products.php?brand=cisco&model=cisco-c220-m5-rack-server">Cisco C220 M5 Rack Server</a></li>
+                <li><a href="products.php?brand=cisco&model=cisco-c240-m4-rack-server">Cisco C240 M4 Rack Server</a></li>
+                <li><a href="products.php?brand=cisco&model=cisco-c220-m4-rack-server">Cisco C220 M4 Rack Server</a></li>
+                <li><a href="products.php?brand=cisco&model=cisco-c240-m3-rack-server">Cisco C240 M3 Rack Server</a></li>
+                <li><a href="products.php?brand=cisco&model=cisco-c220-m3-rack-server">Cisco C220 M3 Rack Server</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: HPE New Servers -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?brand=hpe&condition=new">HPE New Servers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=hpe&model=hpe-dl384-g12-rack-server">HPE DL384 G12 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380-g12-rack-server">HPE DL380 G12 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360-g12-rack-server">HPE DL360 G12 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl340-g12-rack-server">HPE DL340 G12 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl320-g12-rack-server">HPE DL320 G12 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl560-g11-rack-server">HPE DL560 G11 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380-g11-rack-server">HPE DL380 G11 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360-g11-rack-server">HPE DL360 G11 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl345-g11-rack-server">HPE DL345 G11 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl365-gen10-plus-server">HPE DL365 Gen10 Plus Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl385-g10-plus-v2-server">HPE DL385 G10 Plus v2 Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl580-g10-rack-server">HPE DL580 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl385-g10-rack-server">HPE DL385 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl380-g10-rack-server">HPE DL380 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl360-g10-rack-server">HPE DL360 G10 Rack Server</a></li>
+                <li><a href="products.php?brand=hpe&model=hpe-dl180-g10-rack-server">HPE DL180 G10 Rack Server</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Dell New Servers & Applications -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?brand=dell&condition=new">Dell New Servers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?brand=dell&model=dell-r860-rack-server">Dell R860 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r760-rack-server">Dell R760 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r660-rack-server">Dell R660 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r360-rack-server">Dell R360 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r260-rack-server">Dell R260 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-r750-rack-server">Dell R750 Rack Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-t560-tower-server">Dell T560 Tower Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-t360-tower-server">Dell T360 Tower Server</a></li>
+                <li><a href="products.php?brand=dell&model=dell-t160-tower-server">Dell T160 Tower Server</a></li>
+              </ul>
+              <h4 class="mega-subheading"><a href="products.php?category=servers-by-application">Servers by Application</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=ai-servers&view=pricing">Best AI Server Pricing List</a></li>
+                <li><a href="products.php?category=gpu-servers">GPU Servers</a></li>
+                <li><a href="products.php?category=hpc-servers">HPC Servers</a></li>
+                <li><a href="products.php?category=amd-epyc-servers">AMD EPYC Servers</a></li>
+                <li><a href="products.php?category=mining-servers">Chia Coin Mining Servers</a></li>
+                <li><a href="products.php?category=rendering-ai-servers">Servers for Rendering / AI</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 5: Storage Servers & Other Categories -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=storage-servers">Storage Servers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=storage-servers&brand=dell">Dell Storage Servers</a></li>
+                <li><a href="products.php?category=storage-servers&brand=hpe">HPE Storage Servers</a></li>
+                <li><a href="products.php?category=nas-storage">NAS Storage Servers</a></li>
+                <li><a href="products.php?category=san-storage">SAN Storage Servers</a></li>
+                <li><a href="products.php?category=storage-servers&condition=refurbished">Refurbished Storage Servers</a></li>
+              </ul>
+              <h4 class="mega-subheading"><a href="products.php?category=all-servers">Other Categories</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=blade-servers&brand=hpe">HP Blade Servers</a></li>
+                <li><a href="products.php?category=blade-servers&brand=dell">Dell Blade Servers</a></li>
+                <li><a href="products.php?page=buying-guide">Server Buying Guide</a></li>
+                <li><a href="products.php?category=servers-sale">Servers for Sale</a></li>
+                <li><a href="products.php?category=mikrotik">Mikrotik Servers</a></li>
+                <li><a href="products.php?category=custom-server">Customized Servers</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- NETWORKING with 3-Column Mega Menu -->
+      <div class="nav-item has-mega-menu">
+        <a href="products.php?category=networking" id="networking-menu-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="networking-mega-menu">
+          NETWORKING <span class="nav-arrow" aria-hidden="true">▼</span>
+        </a>
+
+        <div class="mega-menu" id="networking-mega-menu" role="region" aria-label="Networking Mega Menu">
+          <div class="mega-menu-grid cols-3">
+
+            <!-- Column 1: Firewalls & Network Switches -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=firewalls">Firewalls</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=basic-firewalls">Basic Firewalls</a></li>
+                <li><a href="products.php?category=enterprise-firewalls">Enterprise Firewalls</a></li>
+                <li><a href="products.php?category=fortigate-firewall">FortiGate Firewall</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=network-switches">Network Switches</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=cisco-switches">Cisco Switches</a></li>
+                <li><a href="products.php?category=huawei-switches">Huawei Switches</a></li>
+                <li><a href="products.php?category=juniper-switches">Juniper Switches</a></li>
+                <li><a href="products.php?category=kvm-switches">KVM Switches</a></li>
+                <li><a href="products.php?category=mikrotik-switches">MikroTik Switches</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Load Balancers -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=load-balancers">Load Balancers</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=radware-load-balancer">Radware Load Balancer</a></li>
+                <li><a href="products.php?category=a10-load-balancer">A10 Load Balancer</a></li>
+                <li><a href="products.php?category=application-load-balancer">Application Load Balancer</a></li>
+                <li><a href="products.php?category=citrix-load-balancer">Citrix Load Balancer</a></li>
+                <li><a href="products.php?category=cloud-load-balancer">Cloud Load Balancer</a></li>
+                <li><a href="products.php?category=f5-load-balancer">F5 Load Balancer</a></li>
+                <li><a href="products.php?category=fatpipe-load-balancer">FatPipe Load Balancer</a></li>
+                <li><a href="products.php?category=kemp-load-balancer">KEMP Load Balancer</a></li>
+                <li><a href="products.php?category=packeteer-load-balancer">Packeteer Load Balancer</a></li>
+                <li><a href="products.php?category=peplink-load-balancer">Peplink Load Balancer</a></li>
+                <li><a href="products.php?category=riverbed-load-balancer">Riverbed Load Balancer</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: SFP Modules & Standalone Categories -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=sfp-modules">SFP Modules</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=100gb-sfp-modules">100Gb SFP Modules</a></li>
+                <li><a href="products.php?category=40g-sfp-modules">40G SFP Modules</a></li>
+                <li><a href="products.php?category=16g-sfp-modules">16G SFP Modules</a></li>
+                <li><a href="products.php?category=10g-sfp-modules">10G SFP Modules</a></li>
+                <li><a href="products.php?category=8g-sfp-modules">8G SFP Modules</a></li>
+                <li><a href="products.php?category=1g-sfp-modules">1G SFP Modules</a></li>
+              </ul>
+
+              <div class="mega-standalone-group">
+                <a href="products.php?category=dac-cables" class="mega-standalone-link">DAC Cables</a>
+                <a href="products.php?category=network-servers" class="mega-standalone-link">Network Servers</a>
+                <a href="products.php?category=routers" class="mega-standalone-link">Routers</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- COMPONENTS with 5-Column Mega Menu -->
+      <div class="nav-item has-mega-menu">
+        <a href="products.php?category=components" id="components-menu-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="components-mega-menu">
+          COMPONENTS <span class="nav-arrow" aria-hidden="true">▼</span>
+        </a>
+
+        <div class="mega-menu" id="components-mega-menu" role="region" aria-label="Components Mega Menu">
+          <div class="mega-menu-grid">
+
+            <!-- Column 1: Processors & AMD EPYC -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=processors">Processors</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=8-core-processors">8 Core Processors</a></li>
+                <li><a href="products.php?category=12-core-processors">12 Core Processors</a></li>
+                <li><a href="products.php?category=16-core-processors">16 Core Processors</a></li>
+                <li><a href="products.php?category=18-core-processors">18 Core Processors</a></li>
+                <li><a href="products.php?category=22-core-processors">22 Core Processors</a></li>
+                <li><a href="products.php?category=xeon-haswell-processors">Xeon Haswell Processor</a></li>
+                <li><a href="products.php?category=xeon-broadwell-processors">Xeon Broadwell Processors</a></li>
+                <li><a href="products.php?category=xeon-skylake-processors">Xeon Skylake Processors</a></li>
+                <li><a href="products.php?category=xeon-sandy-bridge-processors">Xeon Sandy Bridge Processors</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=amd-epyc-processors">AMD EPYC Processors</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=amd-epyc-7742">AMD EPYC 7742 Processor</a></li>
+                <li><a href="products.php?category=amd-epyc-7551">AMD EPYC 7551 Processor</a></li>
+                <li><a href="products.php?category=amd-epyc-7351p">AMD EPYC 7351P Processor</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Server Memory -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=ddr5-server-ram">DDR5 Server RAM</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=16gb-ddr5-ram">16GB DDR5 RAM</a></li>
+                <li><a href="products.php?category=32gb-ddr5-ram">32GB DDR5 RAM</a></li>
+                <li><a href="products.php?category=64gb-ddr5-ram">64GB DDR5 RAM</a></li>
+                <li><a href="products.php?category=128gb-ddr5-ram">128GB DDR5 RAM</a></li>
+                <li><a href="products.php?category=256gb-ddr5-ram">256GB DDR5 RAM</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=ddr4-server-ram">DDR4 Server RAM</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=8gb-ddr4-ram">8GB DDR4 RAM</a></li>
+                <li><a href="products.php?category=16gb-ddr4-ram">16GB DDR4 RAM</a></li>
+                <li><a href="products.php?category=32gb-ddr4-ram">32GB DDR4 RAM</a></li>
+                <li><a href="products.php?category=64gb-ddr4-ram">64GB DDR4 RAM</a></li>
+                <li><a href="products.php?category=128gb-ddr4-ram">128GB DDR4 RAM</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=ddr3-server-ram">DDR3 Server RAM</a></h4>
+            </div>
+
+            <!-- Column 3: Server Storage Drives -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=hard-disk-drives">Hard Disk Drives</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=sas-hdds">SAS HDDs</a></li>
+                <li><a href="products.php?category=sata-hdds">SATA HDDs</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=solid-state-drives">Solid State Drives</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=sas-ssds">SAS SSDs</a></li>
+                <li><a href="products.php?category=sata-ssds">SATA SSDs</a></li>
+                <li><a href="products.php?category=nvme-ssds">NVMe SSDs</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=top-selling-hdds">Top Selling HDDs</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=wd-18tb-sas-hdd">WD 18TB SAS HDD</a></li>
+                <li><a href="products.php?category=seagate-20tb-sas-hdd">Seagate 20TB SAS HDD</a></li>
+                <li><a href="products.php?category=hgst-24tb-sas-hdd">HGST 24TB SAS HDD</a></li>
+                <li><a href="products.php?category=toshiba-24tb-sas-hdd">Toshiba 24TB SAS HDD</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: AI & Enterprise GPUs -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=enterprise-gpus">AI &amp; Enterprise GPUs</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=nvidia-rtx-6000-ada">NVIDIA RTX 6000 Ada</a></li>
+                <li><a href="products.php?category=nvidia-rtx-5000-ada">NVIDIA RTX 5000 Ada</a></li>
+                <li><a href="products.php?category=nvidia-rtx-a6000">NVIDIA RTX A6000</a></li>
+                <li><a href="products.php?category=nvidia-rtx-a5000">NVIDIA RTX A5000</a></li>
+                <li><a href="products.php?category=nvidia-quadro-rtx-8000">NVIDIA Quadro RTX 8000</a></li>
+              </ul>
+
+              <h4 class="mega-subheading"><a href="products.php?category=shop-gpus">Shop By Brand &amp; Size</a></h4>
+              <ul class="mega-links">
+                <li><a href="products.php?category=nvidia-gpus">NVIDIA GPUs</a></li>
+                <li><a href="products.php?category=amd-gpus">AMD GPUs</a></li>
+                <li><a href="products.php?category=24gb-gpus">24GB GPUs</a></li>
+                <li><a href="products.php?category=40gb-gpus">40GB GPUs</a></li>
+                <li><a href="products.php?category=48gb-gpus">48GB GPUs</a></li>
+                <li><a href="products.php?category=80gb-gpus">80GB GPUs</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 5: Other Spares -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?category=other-spares">Other Spares</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?category=server-motherboards">Server Motherboards</a></li>
+                <li><a href="products.php?category=power-supplies">Power Supplies</a></li>
+                <li><a href="products.php?category=raid-cards">RAID Cards</a></li>
+                <li><a href="products.php?category=hba-cards">HBA Cards</a></li>
+                <li><a href="products.php?category=ethernet-cards">Ethernet Cards</a></li>
+                <li><a href="products.php?category=riser-cards">Riser Cards</a></li>
+                <li><a href="products.php?category=cpu-heatsinks">CPU Heatsinks</a></li>
+                <li><a href="products.php?category=server-fans">Server Fans</a></li>
+                <li><a href="products.php?category=rail-kits">Rail Kits</a></li>
+                <li><a href="products.php?category=server-caddies">Server Caddies</a></li>
+                <li><a href="products.php?category=server-bezels">Server Bezels</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR PRODUCTS with 5-Column Mega Menu -->
+      <div class="nav-item has-mega-menu">
+        <a href="products.php?section=our-products" id="our-products-menu-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="our-products-mega-menu">
+          OUR PRODUCTS <span class="nav-arrow" aria-hidden="true">▼</span>
+        </a>
+
+        <div class="mega-menu" id="our-products-mega-menu" role="region" aria-label="Our Products Mega Menu">
+          <div class="mega-menu-header-mobile">
+            <span class="mega-menu-title">Our Products Categories</span>
+            <button type="button" class="mega-menu-close-btn" aria-label="Close Our Products Menu">✕</button>
+          </div>
+          <div class="mega-menu-grid">
+
+            <!-- Column 1 — Computer Accessories -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?section=our-products&category=computer-accessories">Computer Accessories</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?section=our-products&category=keyboards">Keyboards</a></li>
+                <li><a href="products.php?section=our-products&category=computer-mice">Computer Mice</a></li>
+                <li><a href="products.php?section=our-products&category=mouse-pads">Mouse Pads</a></li>
+                <li><a href="products.php?section=our-products&category=webcams">Webcams</a></li>
+                <li><a href="products.php?section=our-products&category=usb-hubs">USB Hubs</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2 — Laptop Accessories -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?section=our-products&category=laptop-accessories">Laptop Accessories</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?section=our-products&category=laptop-chargers">Laptop Chargers</a></li>
+                <li><a href="products.php?section=our-products&category=laptop-bags">Laptop Bags</a></li>
+                <li><a href="products.php?section=our-products&category=cooling-pads">Cooling Pads</a></li>
+                <li><a href="products.php?section=our-products&category=laptop-stands">Laptop Stands</a></li>
+                <li><a href="products.php?section=our-products&category=docking-stations">Docking Stations</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3 — Monitors & Displays -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?section=our-products&category=monitors-displays">Monitors &amp; Displays</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?section=our-products&category=led-monitors">LED Monitors</a></li>
+                <li><a href="products.php?section=our-products&category=gaming-monitors">Gaming Monitors</a></li>
+                <li><a href="products.php?section=our-products&category=monitor-stands">Monitor Stands</a></li>
+                <li><a href="products.php?section=our-products&category=display-adapters">Display Adapters</a></li>
+                <li><a href="products.php?section=our-products&category=hdmi-cables-display">HDMI Cables</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4 — Storage & Components -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?section=our-products&category=storage-components">Storage &amp; Components</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?section=our-products&category=internal-ssds">Internal SSDs</a></li>
+                <li><a href="products.php?section=our-products&category=external-ssds">External SSDs</a></li>
+                <li><a href="products.php?section=our-products&category=hard-drives">Hard Drives</a></li>
+                <li><a href="products.php?section=our-products&category=ram-modules">RAM Modules</a></li>
+                <li><a href="products.php?section=our-products&category=graphics-cards">Graphics Cards</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 5 — Cables & Networking -->
+            <div class="mega-column">
+              <h3 class="mega-heading"><a href="products.php?section=our-products&category=cables-networking">Cables &amp; Networking</a></h3>
+              <ul class="mega-links">
+                <li><a href="products.php?section=our-products&category=usb-cables">USB Cables</a></li>
+                <li><a href="products.php?section=our-products&category=hdmi-cables">HDMI Cables</a></li>
+                <li><a href="products.php?section=our-products&category=ethernet-cables">Ethernet Cables</a></li>
+                <li><a href="products.php?section=our-products&category=network-adapters">Network Adapters</a></li>
+                <li><a href="products.php?section=our-products&category=wifi-adapters">Wi-Fi Adapters</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <main class="contact-wrapper">
+    <div class="contact-container">
+      <div class="contact-grid">
+        
+        <!-- Sidebar Info -->
+        <div class="contact-sidebar">
+          <div>
+            <h2>Get in Touch</h2>
+            <p>Ready to configure your enterprise server cluster or need an instant quote with warranty? Our technical engineers respond within 15 minutes.</p>
+
+            <ul class="contact-info-list">
+              <li>
+                <strong>Corporate Office Address</strong>
+                <span>Ground Floor, Plot No-RZ-J-8, KH No.7/18/2, Tamilians Enclave, Tamil Enclave, Dabri Back Dwarka, South West Delhi, New Delhi, Delhi 110045</span>
+              </li>
+              <li>
+                <strong>Hotline &amp; Sales Support</strong>
+                <a href="tel:+919911003865">+91 99110 03865</a>
+              </li>
+              <li>
+                <strong>24x7 WhatsApp Desk</strong>
+                <a href="https://wa.me/919911003865" target="_blank" rel="noopener noreferrer">+91 99110 03865</a>
+              </li>
+              <li>
+                <strong>Sales Email</strong>
+                <a href="mailto:sales@iboltnetworks.com">sales@iboltnetworks.com</a>
+              </li>
+              <li>
+                <strong>Business Hours</strong>
+                <span>Monday – Saturday: 9:00 AM – 9:00 PM IST (24x7 Chat)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="font-size:13px; opacity:0.8;">
+            iboltnetworks • Powering your technology with reliable enterprise infrastructure.
+          </div>
+        </div>
+
+        <!-- Form Wrap -->
+        <div class="contact-form-wrap">
+          <h3>Request an Instant Quote</h3>
+          <p>Fill out the form below and an enterprise solution consultant will get back to you immediately.</p>
+
+          <form id="quote-form" onsubmit="event.preventDefault(); alert('Thank you! Your quote request has been received. Our sales engineer will contact you shortly.');">
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Business Email *</label>
+              <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="server-model">Server Model / Required Hardware *</label>
+              <input type="text" id="server-model" name="server_model" required placeholder="e.g. Dell PowerEdge R740 2U Rack Server">
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Configuration Notes / Requirement Details</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Specify required RAM (e.g. 128GB), Storage (e.g. 4x 1.92TB SSD), RAID, Quantity, or Target Budget..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Request →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-float"
+     href="https://wa.me/919911003865"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with iboltnetworks engineers on WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <svg viewBox="0 0 32 32" aria-hidden="true" class="wa-icon">
+      <path d="M16 3.2A12.1 12.1 0 0 0 5.6 21.5L4 28l6.7-1.7A12.2 12.2 0 1 0 16 3.2Z"
+            fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M12 10.2c-.4-.8-.8-.8-1.2-.8h-1c-.4 0-.9.2-1.2.7-.4.5-1.6 1.6-1.6 3.8s1.6 4.3 1.8 4.6c.2.3 3.1 4.9 7.6 6.1 3.8 1 4.6-.3 5.4-1.1.7-.8.7-1.5.5-1.7-.2-.3-.4-.4-.9-.7-.5-.2-2.7-1.3-3.1-1.4-.4-.2-.7-.2-.9.2-.3.4-1.1 1.4-1.4 1.7-.3.3-.5.3-1 .1-.5-.2-1.9-.7-3.6-2.2-1.3-1.2-2.2-2.7-2.4-3.1-.3-.5 0-.7.2-.9l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8-.1-.2-1-2.5-1.4-3.4Z"
+            fill="currentColor" transform="translate(3 1) scale(.8)"/>
+    </svg>
+    <span class="whatsapp-tooltip">24×7 Engineer Chat</span>
+  </a>
+
+  <!-- Redesigned Site Footer -->
+  <footer class="site-footer" id="site-footer">
+
+    <!-- Top Feature & Trust Strip -->
+    <div class="footer-features-bar">
+      <div class="footer-features-inner">
+        <div class="footer-feature-item">
+          <div class="footer-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div class="footer-feature-text">
+            <strong>Pan-India Express Dispatch</strong>
+            <span>Verified tracked shipping on all servers</span>
+          </div>
+        </div>
+
+        <div class="footer-feature-item">
+          <div class="footer-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          </div>
+          <div class="footer-feature-text">
+            <strong>Certified &amp; Tested Hardware</strong>
+            <span>1 to 3-Year comprehensive replacement warranty</span>
+          </div>
+        </div>
+
+        <div class="footer-feature-item">
+          <div class="footer-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path><path d="M12 19v3"></path></svg>
+          </div>
+          <div class="footer-feature-text">
+            <strong>24×7 L2/L3 Tech Engineers</strong>
+            <span>Direct consultation with average 15-min SLA</span>
+          </div>
+        </div>
+
+        <div class="footer-feature-item">
+          <div class="footer-feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <div class="footer-feature-text">
+            <strong>100% Secure Checkout</strong>
+            <span>Razorpay encrypted &amp; verified transactions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Grid (4 balanced, aligned columns) -->
+    <div class="footer-container">
+      
+      <!-- Column 1: Brand & Profile -->
+      <div class="footer-column footer-brand-column">
+        <a href="index.php" class="footer-brand-logo" aria-label="iboltnetworks home">
+          <span class="footer-brand-mark">iB</span>
+          <span class="footer-brand-text">
+            <strong>ibolt<span>networks</span></strong>
+            <small>Powering your technology</small>
+          </span>
+        </a>
+
+        <p class="footer-brand-desc">
+          India&#39;s premier enterprise hardware platform. We supply certified rack &amp; tower servers, HPC AI clusters, enterprise firewalls, and verified network infrastructure for mission-critical deployments.
+        </p>
+
+        <p class="footer-office-loc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#00e06d; flex-shrink:0; margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Ground Floor, Plot No-RZ-J-8, KH No.7/18/2, Tamilians Enclave, Tamil Enclave, Dabri Back Dwarka, South West Delhi, New Delhi, Delhi 110045</span>
+        </p>
+
+        <div class="footer-status-badge">
+          <span class="status-pulse-dot"></span>
+          <span>Enterprise Desk: <strong>Online 24×7</strong></span>
+        </div>
+
+        <div class="footer-social-wrap">
+          <span class="footer-social-label">Connect with Us</span>
+          <div class="footer-social-icons">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.05 1.53 1.53 0 0 0 0 3.05m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.77 0-1.611.179-1.92.585-.308.404-.325 1.059-.325 2.053v1.347h4.089l-.545 3.667h-3.544v7.98h-4.813z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Hardware Categories -->
+      <div class="footer-column">
+        <h3 class="footer-heading">
+          <span>Hardware Categories</span>
+        </h3>
+        <ul class="footer-links">
+          <li><a href="products.php?brand=dell">Dell PowerEdge Servers</a></li>
+          <li><a href="products.php?brand=hpe">HPE ProLiant Systems</a></li>
+          <li><a href="products.php?brand=cisco">Cisco Enterprise Switches</a></li>
+          <li><a href="products.php?brand=huawei">Huawei Hardware Solutions</a></li>
+          <li><a href="products.php?category=storage-servers">SAN &amp; NAS Storage Servers</a></li>
+          <li><a href="products.php?category=ai-servers">GPU &amp; High-Density Compute</a></li>
+          <li><a href="products.php?section=our-products">Server Spares &amp; Peripherals</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Enterprise Solutions -->
+      <div class="footer-column">
+        <h3 class="footer-heading">
+          <span>Enterprise Solutions</span>
+        </h3>
+        <ul class="footer-links">
+          <li><a href="products.php?category=servers">Dedicated Enterprise Servers</a></li>
+          <li><a href="products.php?category=ai-servers">AI &amp; HPC Infrastructure</a></li>
+          <li><a href="products.php?category=firewalls">Enterprise Firewalls &amp; VPN</a></li>
+          <li><a href="products.php?category=load-balancers">Hardware Load Balancers</a></li>
+          <li><a href="products.php?category=custom-server">Custom Server Architectures</a></li>
+          <li><a href="contact.html">Data Center Solutions</a></li>
+          <li><a href="contact.html">System Integrators &amp; Resellers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: 24/7 Enterprise Assistance Card -->
+      <div class="footer-column footer-contact-column">
+        <h3 class="footer-heading">
+          <span>Need Assistance?</span>
+        </h3>
+
+        <div class="footer-contact-card">
+          <div class="footer-contact-badge">DIRECT ENGINEER ACCESS</div>
+
+          <a href="tel:+919911003865" class="contact-pill contact-pill-phone">
+            <div class="contact-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-pill-body">
+              <small>Hotline &amp; Sales Call</small>
+              <strong>+91 99110 03865</strong>
+            </div>
+          </a>
+
+          <a href="https://wa.me/919911003865" target="_blank" rel="noopener noreferrer" class="contact-pill contact-pill-wa">
+            <div class="contact-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16 3.2A12.1 12.1 0 0 0 5.6 21.5L4 28l6.7-1.7A12.2 12.2 0 1 0 16 3.2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10.2c-.4-.8-.8-.8-1.2-.8h-1c-.4 0-.9.2-1.2.7-.4.5-1.6 1.6-1.6 3.8s1.6 4.3 1.8 4.6c.2.3 3.1 4.9 7.6 6.1 3.8 1 4.6-.3 5.4-1.1.7-.8.7-1.5.5-1.7-.2-.3-.4-.4-.9-.7-.5-.2-2.7-1.3-3.1-1.4-.4-.2-.7-.2-.9.2-.3.4-1.1 1.4-1.4 1.7-.3.3-.5.3-1 .1-.5-.2-1.9-.7-3.6-2.2-1.3-1.2-2.2-2.7-2.4-3.1-.3-.5 0-.7.2-.9l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8-.1-.2-1-2.5-1.4-3.4Z"/></svg>
+            </div>
+            <div class="contact-pill-body">
+              <small>24×7 WhatsApp Desk</small>
+              <strong>+91 99110 03865</strong>
+            </div>
+          </a>
+
+          <a href="mailto:sales@iboltnetworks.com" class="contact-pill contact-pill-email">
+            <div class="contact-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-pill-body">
+              <small>Technical Sales Email</small>
+              <strong>sales@iboltnetworks.com</strong>
+            </div>
+          </a>
+
+          <div class="contact-pill contact-pill-address">
+            <div class="contact-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-pill-body">
+              <small>Corporate Office</small>
+              <strong style="white-space: normal; line-height: 1.35; font-size: 13px;">Ground Floor, Plot No-RZ-J-8, KH No.7/18/2, Tamilians Enclave, Tamil Enclave, Dabri Back Dwarka, South West Delhi, New Delhi, Delhi 110045</strong>
+            </div>
+          </div>
+
+          <a href="contact.html" class="footer-cta-btn">
+            <span>Request Custom Server Quote</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Legal Bar -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-inner">
+        <div class="footer-bottom-copy">
+          <p>© <span id="footer-year">2026</span> <strong>iboltnetworks Private Limited</strong>. All rights reserved.</p>
+          <p class="footer-bottom-sub">Ground Floor, Plot No-RZ-J-8, KH No.7/18/2, Tamilians Enclave, Tamil Enclave, Dabri Back Dwarka, South West Delhi, New Delhi, Delhi 110045 • Enterprise Computer Hardware • High-Density Servers • Cloud Networking</p>
+        </div>
+
+        <div class="footer-bottom-links">
+          <a href="contact.html">About iboltnetworks</a>
+          <span class="sep">•</span>
+          <a href="contact.html">Contact Us</a>
+          <span class="sep">•</span>
+          <a href="contact.html">Privacy Policy</a>
+          <span class="sep">•</span>
+          <a href="contact.html">Terms &amp; Conditions</a>
+          <span class="sep">•</span>
+          <a href="contact.html">Warranty Terms</a>
+          <span class="sep">•</span>
+          <a href="contact.html">Payment Security</a>
+        </div>
+
+        <div class="footer-security-chips">
+          <span class="sec-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> 256-bit SSL</span>
+          <span class="sec-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Razorpay Secure</span>
+          <span class="sec-chip">ISO 9001:2015</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="assets/js/our-products-data.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
+  <script>
+    // Pre-populate model name if passed in query string
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const model = params.get('model');
+      if (model) {
+        const input = document.getElementById('server-model');
+        if (input) input.value = model;
+      }
+    })();
+  </script>
+</body>
+</html>
